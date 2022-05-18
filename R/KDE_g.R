@@ -39,7 +39,7 @@ KDE_g <- function(
 
   #Construction de l'histogramme
   # Optimal bandwidth
-  bin_width <- dpih(Valeurg)
+  bin_width <- dpih(Valeurg, scalest="minim")
   # Number of bins
   nbins <- seq(min(Valeurg) - bin_width,
                max(Valeurg) + bin_width,
