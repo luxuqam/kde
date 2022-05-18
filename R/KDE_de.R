@@ -37,7 +37,7 @@ KDE_de <- function(
 
   #Construction de l'histogramme
   # Optimal bandwidth
-  bin_width <- dpih(DoseEq, scalest = "iqr")
+  bin_width <- dpih(DoseEq, scalest = "minim")
   # Number of bins
   nbins <- seq(min(DoseEq) - bin_width,
                max(DoseEq) + bin_width,
